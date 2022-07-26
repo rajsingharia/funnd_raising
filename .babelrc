@@ -1,0 +1,10 @@
+
+
+//styled-component ->  allowing server side render 
+
+{
+    "presets": ["next/babel"],
+    "plugins": [
+        ["styled-components",{"ssr": true}]
+    ]
+}
