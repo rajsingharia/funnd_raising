@@ -2,10 +2,11 @@
 
 pragma solidity >0.7.0 <=0.9.0;
 
+//Campaign Factory
 contract CampaignFactory{
 
     address[] public deployedCampaigns;
-
+    
     event campaignCreated(string title,
                           uint requiredAmount,
                           address indexed owner,
