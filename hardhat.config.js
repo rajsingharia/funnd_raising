@@ -4,7 +4,7 @@ require("dotenv").config({path: "./.env.local"});
 
 task("accounts","Prints the list of accounts", async (taskArgs,hre) => {
   const accounts = await hre.ethers.getSigners();
-  for(const account of accounts){
+  for(const account of accounts) {
     console.log(account.address);
   }
 })
@@ -18,7 +18,7 @@ module.exports = {
     hardhat: {},
     polygon:{
       url: process.env.NEXT_PUBLIC_PRC_URL,
-      accounts: [`0x${privateKey}`]
+      accounts: [privateKey]
     }
   }
 };
