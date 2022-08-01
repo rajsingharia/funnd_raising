@@ -1,5 +1,6 @@
 const hre = require("hardhat");
 
+// Deploy
 async function main(){
     const CampaignFactory = await hre.ethers.getContractFactory("CampaignFactory")
     const campaignFactory = await CampaignFactory.deploy();
