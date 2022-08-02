@@ -301,7 +301,7 @@ const LiveDonation = styled.div`
   overflow-y: auto;
 `;
 const MyDonation = styled.div`
-  height: 35%;
+  height: 65%;
   overflow-y: auto;
 `;
 const DonationTitle = styled.div`
