@@ -45,16 +45,19 @@ const Form = () => {
     
         if(form.campaignTitle === "") {
           toast.warn("Title Field Is Empty");
-        } else if(form.story === "" ) {
+        } 
+        else if(form.story === "" ) {
           toast.warn("Story Field Is Empty");
-        } else if(form.requiredAmount === "") {
+        } 
+        else if(form.requiredAmount === "") {
           toast.warn("Required Amount Field Is Empty");
-        } else if(uploaded == false) {
+        } 
+        else if(uploaded == false) {
             toast.warn("Files Upload Required")
         }
         else {        
           setLoading(true);  
-    
+          
           const contract = new ethers.Contract(
             process.env.NEXT_PUBLIC_ADDRESS,
             CampaignFactory.abi,
@@ -128,6 +131,7 @@ const Spinner = styled.div`
     justify-content:center ;
     align-items:center ;
 `
+
 const Address = styled.div`
     width:100%;
     height:80vh;
@@ -145,7 +149,7 @@ const Button = styled.button`
     width:30% ;
     padding:15px ;
     color:white ;
-    background-color:#00b712 ;
+    background-color: #00b712 ;
     background-image:
     linear-gradient(180deg, #00b712 0%, #5aff15 80%) ;
     border:none ;

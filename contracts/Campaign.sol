@@ -3,7 +3,7 @@
 pragma solidity >0.7.0 <=0.9.0;
 
 //Campaign Factory
-contract CampaignFactory{
+contract CampaignFactory {
 
     address[] public deployedCampaigns;
     
@@ -30,7 +30,7 @@ contract CampaignFactory{
     
 }
 
-contract Campaign{
+contract Campaign {
     string public title;
     uint public requiredAmount;
     string public image;

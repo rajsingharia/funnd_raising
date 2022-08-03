@@ -14,9 +14,9 @@ const privateKey = process.env.NEXT_PUBLIC_PRIVATE_KEY
 module.exports = {
   solidity: "0.8.10",
   defaultNetwork: "polygon",
-  networks:{
+  networks: {
     hardhat: {},
-    polygon:{
+    polygon: {
       url: process.env.NEXT_PUBLIC_PRC_URL,
       accounts: [privateKey]
     }
